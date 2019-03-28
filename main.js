@@ -40,8 +40,8 @@ function saveInputs() {
   guessOne = guessOne.value;
   guessTwo = guessTwo.value;
   document.querySelector('#chal-one').innerText = chalOne;
-  document.querySelector('#guess-one').innerText = chalOne;
-  document.querySelector('#chal-two').innerText = guessOne;
+  document.querySelector('#guess-one').innerText = guessOne;
+  document.querySelector('#chal-two').innerText = chalTwo;
   document.querySelector('#guess-two').innerText = guessTwo;
   checkGuesses('chalOne', guessOne)
   checkGuesses('chalTwo', guessTwo)
