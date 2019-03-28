@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Numbers</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link href='index.css' type='text/css' rel='stylesheet' />
+    <link href='normalize.css' rel='stylesheet' />
+  </head>
+  <body>
+    <h1 class='header'>Vanilla Numbers</h1>
+    <div class='left'>
+      <form class='set-range'>
+        <h2>Set Range</h2>
+        <section class='range-container'>
+          <article class='range'>
+            <label for='min'>Min Range</label>
+            <input type='text' name='min' id='min-input' class='range-input'/>
+          </article>
+          <article class='range'>
+            <label for='max'>Max Range</label>
+            <input type='text' name='max' id='max-input' class='range-input' />
+          </article>
+          <article class='range-btn'>
+            <button id='update-btn'>Update</button>
+          </article>
+        </section>
+      </form>
+      <form class='challengers'>
+        <h3>The Current Range is 
+          <span id='min-display'>_</span> 
+          to 
+          <span id='max-display'>_</span>
+        </h3>
+        <h2>Challenger 1</h2>
+          <section class='challenger-inputs'>
+            <article class='challenger-input'>
+              <label for='name-one'>Name</label>
+              <input name='name-one' id='name-one-input'/>
+            </article>
+            <article class='challenger-input'>
+              <label for='guess-one'>Guess</label>
+              <input name='guess-one' id='guess-one-input'/>
+            </article>  
+          </section>
+        <h2>Challenger 2</h2>
+          <section class='challenger-inputs'>
+            <article class='challenger-input'>
+              <label for='name-two'>Name</label>
+              <input name='name-two'id='name-two-input'/>
+            </article>
+            <article class='challenger-input'>
+              <label for='guess-two'>Guess</label>
+              <input name='guess-two'id='guess-two-input'/>
+            </article>
+          </section>
+        <div class='controls'>
+          <button id='submit-btn'>Submit Guess</button>
+          <button id='reset-btn'>Reset Game</button>
+          <button id='clear-btn'>Clear Game</button>
+        </div>
+      </form>
+      <section class='latest-score'>
+        <h2>Latest Score</h2>
+        <article class='score-cards'>
+          <div class='card'>
+            <h3 id='chal-one'>Challenger 1 Name</h3>
+            <p>Current Guess</p>
+            <p id='guess-one'>#</p>
+            <p id='feedback-chalOne'>Feedback</p>
+          </div>
+          <div class='card'>
+            <h3 id='chal-two'>Challenger 2 Name</h3>
+            <p>Current Guess</p>
+            <p id='guess-two'>#</p>
+            <p id='feedback-chalTwo'>Feedback</p>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class='right'>
+        <article class='winner-card'>
+            <div>
+              <h3>Chal One</h3>
+              <p>vs.</p>
+              <h3>Chal Two</h3>
+            </div>
+            <div>
+              <h2>Name Name</h2>
+              <h2>WINNER</h2>
+            </div>
+          </article>
+    </div>    
+  <script src='main.js'></script>  
+  </body>
+</html>
